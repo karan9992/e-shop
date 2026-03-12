@@ -64,7 +64,7 @@ const ProductCard = ({ product }) => {
 
 
                 {cart.find((c) => c._id === product._id) ?
-                    (<div className="flex items-center  p-1 justify-between px-1  ">
+                    (<div className="flex items-center   p-1 justify-between px-1  my-2 ">
                         <button onClick={() => updateQty(product._id, 'dec')} className="w-16 h-9 rounded-xl bg-white  flex items-center justify-center shadow hover:bg-neutral-50 active:scale-90 transition text-green-500">
                             <Minus size={14} />
                         </button>
@@ -78,7 +78,7 @@ const ProductCard = ({ product }) => {
                         </button>
                     </div>)
 
-                    : <button onClick={() => addToCart(product)} className="bg-neutral-900 my-2 text-white p-2 rounded-xl hover:bg-(--brand-primary) active:scale-90 transition-all shadow-md"> Add to cart  </button>}
+                    : <button onClick={() => addToCart(product)} className="bg-neutral-900 my-2 text-white p-2 rounded-xl hover:bg-(--brand-primary) active:scale-95 transition-all shadow-md"> Add to cart  </button>}
 
 
             </div>
